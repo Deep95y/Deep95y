@@ -88,7 +88,7 @@ I'm a passionate **Software Engineer & Web Developer** who loves crafting user-f
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Deep95y&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Deep95y&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=Deep95y&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deep95y&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
@@ -101,7 +101,7 @@ I'm a passionate **Software Engineer & Web Developer** who loves crafting user-f
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Deep95y&theme=tokyonight&no-frame=true&column=4&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+<img src="https://raw.githubusercontent.com/Deep95y/Deep95y/main/output/github-profile-trophy.svg" alt="GitHub Trophies" />
 
 </div>
 
@@ -121,7 +121,11 @@ I'm a passionate **Software Engineer & Web Developer** who loves crafting user-f
 
 <div align="center">
 
-![Snake animation](https://github.com/Deep95y/Deep95y/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Deep95y/Deep95y/main/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Deep95y/Deep95y/main/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/Deep95y/Deep95y/main/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 

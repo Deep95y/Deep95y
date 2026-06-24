@@ -20,7 +20,7 @@ GitHub only shows a profile README from a repo named **exactly** like your usern
 2. Delete the default `README.md` if one exists
 3. Click **Add file → Upload files**
 4. Upload `README.md` from this folder
-5. Upload `.github/workflows/snake.yml` (create folders as needed)
+5. Upload `.github/workflows/profile-assets.yml` (create folders as needed)
 6. Commit the changes
 
 ### Option B — Git CLI
@@ -29,7 +29,7 @@ GitHub only shows a profile README from a repo named **exactly** like your usern
 cd C:\Users\VJ\github-profile-deep95y
 
 git init
-git add README.md .github/workflows/snake.yml
+git add README.md .github/workflows/profile-assets.yml output/
 git commit -m "Add GitHub profile README"
 git branch -M main
 git remote add origin https://github.com/Deep95y/Deep95y.git
@@ -40,8 +40,10 @@ git push -u origin main
 
 1. In your `Deep95y` repo, go to **Actions**
 2. Click **"I understand my workflows, go ahead and enable them"**
-3. Select **Generate Snake** → **Run workflow**
-4. After it runs (~1 min), the snake SVG appears at `output/github-contribution-grid-snake.svg`
+3. Select **Generate Profile Assets** → **Run workflow**
+4. After it runs (~1 min), assets appear in `output/`:
+   - `github-contribution-grid-snake.svg`
+   - `github-profile-trophy.svg`
 
 The snake auto-updates daily via the scheduled workflow.
 
@@ -84,8 +86,9 @@ Edit `README.md` to update:
 | Issue | Fix |
 |-------|-----|
 | README not showing on profile | Repo must be **public** and named **Deep95y** exactly |
-| Stats cards show 404 | Make some repos public; stats need public activity |
-| Snake image broken | Run the **Generate Snake** workflow once in Actions |
+| Stats cards show 404 or "Could not fetch total commits" | Remove `include_all_commits=true` from stats URL; ensure repos are public |
+| Trophy image broken | Trophies are generated into `output/github-profile-trophy.svg` via Actions |
+| Snake image broken | Run **Generate Profile Assets** workflow once in Actions |
 | Badges not loading | External services can be slow; refresh after a few minutes |
 
 ## File Structure
@@ -95,7 +98,7 @@ Deep95y/                    ← repo name = your username
 ├── README.md               ← your profile page content
 └── .github/
     └── workflows/
-        └── snake.yml       ← auto-generates contribution snake
+        └── profile-assets.yml  ← auto-generates snake + trophy SVGs
 ```
 
 Once pushed, visit [github.com/Deep95y](https://github.com/Deep95y) to see your new profile.
